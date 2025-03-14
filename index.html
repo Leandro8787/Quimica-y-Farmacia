@@ -174,18 +174,47 @@
         a:hover {
             text-decoration: underline;
         }
-        .iframe-container {
+        /* Estilos mejorados para Google Sheets */
+        .sheets-container {
             margin: 40px 0;
             background: #FFFFFF;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-        .iframe-container h3 {
-            color: var(--primary-blue);
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--border-gray);
             margin-bottom: 15px;
         }
-        iframe {
+        .tab-button {
+            flex: 1;
+            padding: 10px 15px;
+            background: #F9F9F9;
+            border: 1px solid var(--border-gray);
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: var(--text-dark);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .tab-button.active {
+            background: var(--primary-blue);
+            color: #FFFFFF;
+            border-color: var(--primary-blue);
+        }
+        .tab-button:hover:not(.active) {
+            background: #E9ECEF;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .sheets-iframe {
             width: 100%;
             height: 600px;
             border: 1px solid var(--border-gray);
@@ -201,6 +230,13 @@
         .malla-container h3 {
             color: var(--primary-blue);
             margin-bottom: 15px;
+        }
+        .malla-iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid var(--border-gray);
+            border-radius: 5px;
+            display: none;
         }
         .image-gallery {
             margin-top: 40px;
@@ -265,11 +301,18 @@
             .filter-container input {
                 width: 100%;
             }
-            iframe {
+            .sheets-iframe, .malla-iframe {
                 height: 400px;
             }
             .image-gallery img {
                 width: 100%;
+            }
+            .tabs {
+                flex-direction: column;
+            }
+            .tab-button {
+                border-radius: 5px;
+                margin-bottom: 5px;
             }
         }
         @media (max-width: 600px) {
@@ -283,7 +326,7 @@
                 font-size: 0.85em;
                 padding: 8px;
             }
-            iframe {
+            .sheets-iframe, .malla-iframe {
                 height: 300px;
             }
             .image-gallery p {
@@ -405,20 +448,52 @@
             </table>
         </div>
 
-        <!-- Contenedor para la malla curricular -->
+        <!-- Contenedor para las mallas curriculares -->
         <div class="malla-container" id="malla-container">
             <h3>Malla Curricular</h3>
-            <iframe id="malla-iframe" src="" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-udd" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1eDU2fp_5151hnlxKOus4AEesO4gDwGoF&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-utem" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=13PR_gn6eW_nG7FY51z-HWoMBNl8C6ZVY&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uvm" src="[URL-UVM]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-unach" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=19DI8HHkdRyx9dUazdgpIOHD4-AyyVtp2&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-unap" src="[URL-UNAP]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uantof" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1Be0cdQBo_RMNqE7G8WZCjb8UAvrjblRY&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ufro" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1tULeLSvh8qvW7cmw2hjGieBluR3HSAyu&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uss-valdivia" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1K6Cmzy6sQHAh2_PGsrbFzE9fhoCWvGZk&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ucn" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1lZeke1_GV30mwxn-gT-oEidz9iySe0qH&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ubiobio" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1FahEw0B7KvIEzixi867Y6lQGKZPniQAs&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ubo" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1Wx1ewcTvwNW2kEN4yiIRW4ZcEUlT8laD&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uct" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1lZeke1_GV30mwxn-gT-oEidz9iySe0qH&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-usach" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1xM_5drsJXLhZNUWRaYYXcHp1znB0a4BL&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ulagos" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1e8JJxekREI-Q-wcUn9d6EH48COkc2gAf&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uss-patagonia" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1K6Cmzy6sQHAh2_PGsrbFzE9fhoCWvGZk&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uautonoma-maule" src="[URL-UAUTONOMA-MAULE]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-ucm" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1XD1G991zCE-gDnDs0c2YzTPLTgj2Drrr&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-unab-concepcion" src="[URL-UNAB-CONCEPCION]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-udec" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1qnq2xhNGSNdywI2szRLHj5PX-7TCo_6R&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uv" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1lW4Qm2y3Bn-gQ8jX5-v3KO4NXJWta9nN&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uautonoma-metropolitana" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1l9cfRshb1PoTaNalEes3RdTuiUZ5kTeu&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uc" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=122G9cLHwNVdMXd9JjRHpemYLwMDhbuuB&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uautonoma-araucania" src="[URL-UAUTONOMA-ARAUCANIA]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uach" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1E3H90b7Okhzepud7rl2uTD3D3QZi19Xk&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-unab-vina" src="[URL-UNAB-VINA]" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uss-santiago" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1K6Cmzy6sQHAh2_PGsrbFzE9fhoCWvGZk&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uchile" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1k0RSgMMpM81DV4VJU2JaAeee8_qghBbB&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-unab-santiago" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1CEyKWlWcMU1MBNJNOrHMNccjlhTBMDJS&embedded=true" frameborder="0"></iframe>
+            <iframe class="malla-iframe" id="malla-uss-concepcion" src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1K6Cmzy6sQHAh2_PGsrbFzE9fhoCWvGZk&embedded=true" frameborder="0"></iframe>
         </div>
 
-        <!-- Iframes para Google Sheets -->
-        <div class="iframe-container">
-            <h3>Datos Generales - Google Sheet</h3>
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQe7c42LFmutVVlnw3Rnt7g_etKoRHs9jVR87BtU_mxBFMotiWHDFC6RE8-tlcJsg/pubhtml?gid=640263754&single=true" frameborder="0"></iframe>
-        </div>
-        <div class="iframe-container">
-            <h3>Indicadores de Desempeño - Google Sheet</h3>
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFo7_2CH-U4K1Q7aT42GpICDFOEftrsc3QYQZRlW47ehZH0DvFwjjrx5Yy00aKXQ/pubhtml?gid=905275416&single=true" frameborder="0"></iframe>
+        <!-- Contenedor de Google Sheets con pestañas -->
+        <div class="sheets-container">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('datos-generales')">Datos Generales</button>
+                <button class="tab-button" onclick="openTab('indicadores-desempeno')">Indicadores de Desempeño</button>
+            </div>
+            <div id="datos-generales" class="tab-content active">
+                <iframe class="sheets-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQe7c42LFmutVVlnw3Rnt7g_etKoRHs9jVR87BtU_mxBFMotiWHDFC6RE8-tlcJsg/pubhtml?gid=640263754&single=true" frameborder="0"></iframe>
+            </div>
+            <div id="indicadores-desempeno" class="tab-content">
+                <iframe class="sheets-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFo7_2CH-U4K1Q7aT42GpICDFOEftrsc3QYQZRlW47ehZH0DvFwjjrx5Yy00aKXQ/pubhtml?gid=905275416&single=true" frameborder="0"></iframe>
+            </div>
         </div>
 
         <!-- Galería de Imágenes -->
@@ -476,49 +551,49 @@
         </div>
     </div>
 
-    <!-- Script para filtrar las tablas y mostrar la malla -->
+    <!-- Script para filtrar las tablas, mostrar la malla y manejar las pestañas -->
     <script>
-        // Mapa de universidades a nombres de archivo en GitHub
-        const universityFileMap = {
-            "Universidad del Desarrollo": "udd",
-            "Universidad Tecnológica Metropolitana": "utem",
-            "Universidad de Viña del Mar": "uvm",
-            "Universidad Adventista de Chile": "unach",
-            "Universidad Arturo Prat": "unap",
-            "Universidad de Antofagasta": "uantof",
-            "Universidad de La Frontera": "ufro",
-            "Universidad San Sebastián (Sede Valdivia)": "uss_valdivia",
-            "Universidad Católica del Norte": "ucn",
-            "Universidad del Bío-Bío": "ubiobio",
-            "Universidad Bernardo O'Higgins": "ubo",
-            "Universidad Católica de Temuco": "uct",
-            "Universidad de Santiago de Chile": "usach",
-            "Universidad de Los Lagos": "ulagos",
-            "Universidad San Sebastián (Sede Patagonia)": "uss_patagonia",
-            "Universidad Autónoma de Chile": "uautonoma",
-            "Universidad Católica del Maule": "ucm",
-            "Universidad Andrés Bello (Sede Concepción)": "unab_concepcion",
-            "Universidad de Concepción": "udec",
-            "Universidad de Valparaíso": "uv",
-            "Pontificia Universidad Católica de Chile": "uc",
-            "Universidad Austral de Chile": "uach",
-            "Universidad Andrés Bello (Sede Viña del Mar)": "unab_vina",
-            "Universidad San Sebastián (Sede Santiago)": "uss_santiago",
-            "Universidad de Chile": "uchile",
-            "Universidad Andrés Bello (Casa Central Santiago)": "unab_santiago",
-            "Universidad San Sebastián (Sede Concepción)": "uss_concepcion"
+        // Mapa de universidades a IDs de iframes
+        const universityIframeMap = {
+            "Universidad del Desarrollo": "malla-udd",
+            "Universidad Tecnológica Metropolitana": "malla-utem",
+            "Universidad de Viña del Mar": "malla-uvm",
+            "Universidad Adventista de Chile": "malla-unach",
+            "Universidad Arturo Prat": "malla-unap",
+            "Universidad de Antofagasta": "malla-uantof",
+            "Universidad de La Frontera": "malla-ufro",
+            "Universidad San Sebastián (Sede Valdivia)": "malla-uss-valdivia",
+            "Universidad Católica del Norte": "malla-ucn",
+            "Universidad del Bío-Bío": "malla-ubiobio",
+            "Universidad Bernardo O'Higgins": "malla-ubo",
+            "Universidad Católica de Temuco": "malla-uct",
+            "Universidad de Santiago de Chile": "malla-usach",
+            "Universidad de Los Lagos": "malla-ulagos",
+            "Universidad San Sebastián (Sede Patagonia)": "malla-uss-patagonia",
+            "Universidad Autónoma de Chile": "malla-uautonoma-maule", // Asumimos Maule como principal, ajusta según necesidad
+            "Universidad Católica del Maule": "malla-ucm",
+            "Universidad Andrés Bello (Sede Concepción)": "malla-unab-concepcion",
+            "Universidad de Concepción": "malla-udec",
+            "Universidad de Valparaíso": "malla-uv",
+            "Universidad Autónoma de Chile": "malla-uautonoma-metropolitana", // Metropolitana
+            "Pontificia Universidad Católica de Chile": "malla-uc",
+            "Universidad Autónoma de Chile": "malla-uautonoma-araucania", // Araucanía
+            "Universidad Austral de Chile": "malla-uach",
+            "Universidad Andrés Bello (Sede Viña del Mar)": "malla-unab-vina",
+            "Universidad San Sebastián (Sede Santiago)": "malla-uss-santiago",
+            "Universidad de Chile": "malla-uchile",
+            "Universidad Andrés Bello (Casa Central Santiago)": "malla-unab-santiago",
+            "Universidad San Sebastián (Sede Concepción)": "malla-uss-concepcion"
         };
-
-        // URL base de tu repositorio en GitHub
-        const githubBaseUrl = "https://github.com/Leandro8787/Quimica-y-Farmacia/new/main";
 
         function filterTable() {
             const input = document.getElementById('search').value.toLowerCase();
             const tables = [document.getElementById('data-table1'), document.getElementById('data-table2')];
-            const mallaIframe = document.getElementById('malla-iframe');
             const mallaContainer = document.getElementById('malla-container');
+            const iframes = document.getElementsByClassName('malla-iframe');
             let selectedUniversity = null;
 
+            // Filtrar las tablas
             tables.forEach(table => {
                 const rows = table.getElementsByTagName('tr');
                 for (let i = 1; i < rows.length; i++) {
@@ -537,16 +612,41 @@
                 }
             });
 
-            // Mostrar u ocultar el iframe de la malla según el filtro
-            if (selectedUniversity && universityFileMap[selectedUniversity]) {
-                const fileName = universityFileMap[selectedUniversity];
-                mallaIframe.src = `${githubBaseUrl}${fileName}.pdf`;
+            // Ocultar todos los iframes
+            for (let iframe of iframes) {
+                iframe.style.display = 'none';
+            }
+
+            // Mostrar el iframe correspondiente a la universidad filtrada
+            if (selectedUniversity && universityIframeMap[selectedUniversity]) {
+                const iframeId = universityIframeMap[selectedUniversity];
+                document.getElementById(iframeId).style.display = 'block';
                 mallaContainer.style.display = 'block';
             } else {
-                mallaIframe.src = '';
                 mallaContainer.style.display = 'none';
             }
         }
+
+        // Función para manejar las pestañas de Google Sheets
+        function openTab(tabName) {
+            const tabs = document.getElementsByClassName('tab-content');
+            const buttons = document.getElementsByClassName('tab-button');
+
+            // Ocultar todos los contenidos y desactivar botones
+            for (let tab of tabs) {
+                tab.classList.remove('active');
+            }
+            for (let button of buttons) {
+                button.classList.remove('active');
+            }
+
+            // Mostrar el contenido seleccionado y activar el botón
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Activar la primera pestaña por defecto
+        document.querySelector('.tab-button').click();
     </script>
 </body>
 </html>
