@@ -26,12 +26,12 @@
             overflow-x: hidden;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
         nav {
-            position: fixed;
+            position: fixed; /* Fija por defecto en pantallas grandes */
             top: 0;
             width: 100%;
             background: var(--primary-blue);
@@ -102,8 +102,8 @@
         }
         .main-container {
             max-width: 100%;
-            margin: 60px 0 0 0;
-            padding: 0 10px;
+            margin: 0;
+            padding: 60px 10px 0 10px; /* Padding-top para pantallas grandes con nav fijo */
             text-align: center;
             flex: 1;
             width: 100%;
@@ -336,6 +336,12 @@
             }
         }
         @media (max-width: 600px) {
+            nav {
+                position: static; /* En smartphones, el nav no es fijo y se desplaza con el contenido */
+            }
+            .main-container {
+                padding-top: 10px; /* Reducido el padding-top porque el nav ya no está fijo */
+            }
             .intro h1 {
                 font-size: 1.5em;
             }
