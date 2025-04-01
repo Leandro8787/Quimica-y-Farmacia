@@ -1,81 +1,41 @@
-Perfil de Egreso - Química y Farmacia (UCM)
-Perfil de Egreso
-El egresado de la carrera de Química y Farmacia de la Universidad Católica del Maule es un
-Profesional de la Salud que 
-proyecta su desempeño en el área clínica, asistencial, industrial y medioambiental como
-especialista en medicamentos y 
-otras sustancias biológicamente activas. Su formación se sustenta en sólidos conocimientos en
-ciencias químicas y 
-biomédicas, con especial énfasis en las ciencias farmacéuticas.
-Está capacitado para liderar y participar en equipos de índole farmacéutica e interdisciplinarios de
-salud, en acciones 
-relacionadas con los fármacos y sus aplicaciones, de manera tal que su quehacer apunte al uso
-racional de medicamentos 
-participando en el fomento de la salud pública y mejorando la calidad de vida de las personas.
-La UCM espera del químico farmacéutico egresado que demuestre permanentemente un
-comportamiento profesional y ciudadano 
-acorde a los valores en los que ha sido formado, incorporándose activamente al desarrollo de su
-disciplina y de la salud 
-en el orbe, en nuestro país y región, con la intención de contribuir a formar una sociedad más
-humana.
-Ámbitos de dominio
-- Profesionalismo farmacéutico: se entiende como la demostración del actuar farmacéutico de
-acuerdo con los principios 
-éticos y humanistas, demostrando excelencia y desarrollo profesional continuo entendido en un
-quehacer inmerso en la 
-interacción con las personas ya sean pacientes, colegas y otros integrantes de equipos de trabajo y
-de salud.
-- Desempeño químico farmacéutico: comprende el conjunto de competencias que se esperan del
-químico farmacéutico en el 
-campo de acción de sustancias bioactivas y medicamentos, para satisfacer los aspectos de índole
-farmacéutico en lo 
-terapéutico, industrial, medioambiental, y considerando el contexto y rol social de la profesión.
-- Investigación: se consideran los aspectos necesarios para que el egresado de la carrera de
-Química y Farmacia pueda 
-desarrollar investigación asociada a su disciplina en un nivel de pregrado tanto en las ciencias
-básicas como de las 
-ciencias farmacéuticas y su proyección en los ámbitos de desempeño, además la capacidad de
-crear proyectos que 
-involucren el desarrollo de habilidades científicas en el contexto de la metodología de investigación.
-- Gestión: considera las acciones involucradas en el quehacer del químico farmacéutico relacionado
-con las necesidades y 
-características de su ámbito, con el objeto de disponer de los recursos humanos, materiales,
-equipamiento y de 
-medicamentos en relación con la salud y el bienestar de las personas.
-- Comunicación: comprende el comunicarse profesionalmente de manera efectiva con miembros del
-equipo de trabajo y de 
-salud, los pacientes y sus familiares, la comunidad y otros, para satisfacer requerimientos de índole
-farmacéutico en 
-contextos de lo disciplinario como lo transdisciplinario, con el objeto de asistir en la mantención de
-salud de las 
-personas.
-Competencias
-1. Resolver necesidades de índole farmacéutico, participando en equipos de trabajo
-interdisciplinarios para responder a 
-desafíos en distintos niveles de la salud, de lo industrial y lo medioambiental.
-2. Intervenir en la formulación, control de calidad y uso tanto de los medicamentos como de otras
-sustancias 
-biológicamente activas, contribuyendo a la prevención, tratamiento y resolución de los problemas
-de salud de las 
-personas de manera oportuna y adecuada en el ámbito de acción del Químico Farmacéutico.
-3. Asesorar los tratamientos farmacológicos y su utilización, haciendo cumplir los aspectos legales y
-reglamentarios, 
-velando por el uso racional de estos.
-4. Gestionar los recursos humanos, materiales, equipamiento y de medicamentos considerando las
-necesidades y 
-características del entorno de desempeño con el objeto de mantener y/o recuperar la salud de las
-personas.
-5. Demostrar coherencia ética entre sus postulados valóricos y sus acciones, respetando los
-derechos humanos y 
-participando activamente en las organizaciones comunitarias, haciendo primar la responsabilidad
-social desde una 
-perspectiva cristiana.
-6. Desarrollar la identidad regional, generando instancias de integración recíproca entre la
-Universidad y la comunidad.
-7. Realizar investigaciones que contribuyan al desarrollo del conocimiento científico y aplicado, en
-el contexto propio 
-de su proceso formativo.
-8. Comunicar ideas, tanto en la lengua materna como en el idioma inglés, haciendo uso de las
-tecnologías de la 
-información para desenvolverse en diversos escenarios, dando soluciones a diversas problemáticas
-de la especialidad.
+
+El egresado de la carrera de Química y Farmacia de la Universidad Católica del Maule es un Profesional de la Salud que proyecta su desempeño en el área clínica, asistencial, industrial y medioambiental como especialista en medicamentos y otras sustancias biológicamente activas.
+
+Su formación se sustenta en sólidos conocimientos en ciencias químicas y biomédicas, con especial énfasis en las ciencias farmacéuticas.
+
+Está capacitado para liderar y participar en equipos de índole farmacéutica e interdisciplinarios de salud, en acciones relacionadas con los fármacos y sus aplicaciones, de manera tal que su quehacer apunte al uso racional de medicamentos participando en el fomento de la salud pública y mejorando la calidad de vida de las personas.
+
+La UCM espera del químico farmacéutico egresado que demuestre permanentemente un comportamiento profesional y ciudadano acorde a los valores en los que ha sido formado, incorporándose activamente al desarrollo de su disciplina y de la salud en el orbe, en nuestro país y región, con la intención de contribuir a formar una sociedad más humana.
+
+## Ámbitos de Dominio
+
+- **Profesionalismo farmacéutico**: actuación conforme a principios éticos y humanistas, excelencia profesional e interacción con pacientes, colegas y equipos de salud.
+- **Desempeño químico farmacéutico**: competencias en sustancias bioactivas y medicamentos, considerando aspectos terapéuticos, industriales, medioambientales y sociales.
+- **Investigación**: capacidad para desarrollar investigación en ciencias básicas y farmacéuticas, y generar proyectos científicos en el contexto metodológico adecuado.
+- **Gestión**: administración de recursos humanos, materiales, equipamiento y medicamentos con foco en salud y bienestar.
+- **Comunicación**: comunicación efectiva en contextos profesionales y transdisciplinarios con pacientes, equipos de salud y comunidad.
+
+## Competencias
+
+1. Resolver necesidades farmacéuticas en contextos interdisciplinarios de salud, industria y medioambiente.
+2. Intervenir en formulación, control de calidad y uso de medicamentos y sustancias bioactivas para la salud.
+3. Asesorar tratamientos farmacológicos cumpliendo la normativa legal y promoviendo su uso racional.
+4. Gestionar recursos conforme a necesidades del entorno para mantener o recuperar la salud.
+5. Actuar éticamente, respetar derechos humanos y participar con responsabilidad social desde una perspectiva cristiana.
+6. Fomentar la identidad regional y la vinculación entre universidad y comunidad.
+7. Realizar investigaciones que aporten al conocimiento científico y aplicado.
+8. Comunicar ideas en lengua materna e inglés, usando tecnologías de información en diversos escenarios.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Formación                              | Ciencias químicas, biomédicas y farmacéuticas                                                    |
+| Ámbitos de Desempeño                   | Clínico, asistencial, industrial, medioambiental                                                 |
+| Profesionalismo                        | Ética, excelencia, interacción con equipos y pacientes                                           |
+| Uso Racional del Medicamento          | Participación en salud pública y mejora de calidad de vida                                       |
+| Investigación                         | Formación para indagación científica en ciencias básicas y aplicadas                             |
+| Gestión                                | Recursos humanos, materiales, equipamiento y medicamentos                                        |
+| Comunicación                           | Comunicación efectiva en lengua materna e inglés, con uso de TIC                                 |
+| Compromiso Social y Ético              | Perspectiva cristiana, respeto por los DD.HH., participación comunitaria                          |
+
