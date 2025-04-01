@@ -1,27 +1,38 @@
-Perfil de Egreso - Química y Farmacia (UChile)
-El/la Químico/a Farmacéutico/a de la Universidad de Chile es un/a profesional de la salud,
-especialista en el conocimiento, 
-desarrollo, producción y aplicación de medicamentos, cosméticos y otras sustancias biológicamente
-activas, tanto en lo que 
-se refiere a sus efectos beneficiosos como en el manejo de efectos tóxicos para la salud humana y
-animal.
-El/La estudiante recibe una fuerte formación en ciencias químico-biológicas y farmacéuticas que lo
-habilitan para: desarrollar 
-y producir medicamentos y cosméticos; gestionar su aplicación farmacológica y clínica; promover el
-uso racional del medicamento 
-y responsabilizarse junto al paciente y médico tratante de los resultados fármaco-terapéuticos,
-monitorizando y haciendo 
-seguimiento continuo para optimizar el uso de los medicamentos y contribuir al logro de los
-objetivos terapéuticos; la 
-farmacovigilancia y la calidad del uso de los medicamentos; gestionar laboratorios y equipos de
-trabajo e investigar e insertarse 
-en proyectos, tanto clínicos como de ciencias básicas que contribuyan a la salud de la población,
-considerando criterios de 
-calidad ajustados a los marcos normativos y regulatorios vigentes.
-La enseñanza que recibe el estudiante le permitirá ejercer su profesión comprometido con la salud
-del paciente, la calidad de vida, 
-el medio ambiente y el fomento de la salud pública. La formación de este profesional también
-promueve el desarrollo de habilidades 
-de liderazgo y capacidad de trabajo en equipo, de innovación y adaptación a los cambios,
-manteniendo una actitud de aprendizaje 
-continuo y un alto sentido ético y de responsabilidad social con la salud pública nacional.
+El/la Químico/a Farmacéutico/a de la Universidad de Chile es un/a profesional de la salud, especialista en el conocimiento, desarrollo, producción y aplicación de medicamentos, cosméticos y otras sustancias biológicamente activas, tanto en lo que se refiere a sus efectos beneficiosos como en el manejo de efectos tóxicos para la salud humana y animal.
+
+El/La estudiante recibe una fuerte formación en ciencias químico-biológicas y farmacéuticas que lo habilitan para:
+
+- Desarrollar y producir medicamentos y cosméticos.
+- Gestionar su aplicación farmacológica y clínica.
+- Promover el uso racional del medicamento y responsabilizarse junto al paciente y médico tratante de los resultados fármaco-terapéuticos.
+- Monitorizar y hacer seguimiento continuo para optimizar el uso de los medicamentos y contribuir al logro de los objetivos terapéuticos.
+- Ejercer funciones de farmacovigilancia y asegurar la calidad en el uso de medicamentos.
+- Gestionar laboratorios y equipos de trabajo.
+- Participar en investigación clínica y en ciencias básicas que contribuyan a la salud de la población, considerando criterios de calidad ajustados a los marcos normativos y regulatorios vigentes.
+
+La enseñanza que recibe el estudiante le permitirá ejercer su profesión comprometido con:
+
+- La salud del paciente
+- La calidad de vida
+- El medio ambiente
+- El fomento de la salud pública
+
+Además, se promueve el desarrollo de:
+
+- Habilidades de liderazgo y capacidad de trabajo en equipo
+- Innovación y adaptación a los cambios
+- Actitud de aprendizaje continuo
+- Alto sentido ético y responsabilidad social con la salud pública nacional
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Especialización                        | Medicamentos, cosméticos y sustancias biológicamente activas                                     |
+| Formación                              | Ciencias químico-biológicas y farmacéuticas                                                      |
+| Producción y Aplicación                | Desarrollo, producción y aplicación clínica y farmacológica de medicamentos                      |
+| Atención Farmacéutica                 | Promoción del uso racional, seguimiento y monitorización                                         |
+| Farmacovigilancia                      | Evaluación de la calidad del uso de medicamentos                                                 |
+| Investigación                         | Participación en proyectos clínicos y de ciencias básicas                                        |
+| Gestión                                | Laboratorios y equipos de trabajo                                                                |
+| Compromiso Profesional                 | Salud pública, medio ambiente, aprendizaje continuo, ética y responsabilidad social              |
