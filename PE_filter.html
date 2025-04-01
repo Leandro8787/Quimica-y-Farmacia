@@ -4,270 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfiles de Egreso - Universidades Chilenas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <style>
-        :root {
-            --primary-blue: #1A3C5A;
-            --secondary-gray: #F5F6F5;
-            --text-dark: #333333;
-            --accent-blue: #4A90E2;
-            --border-gray: #D3D3D3;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: var(--secondary-gray);
-            color: var(--text-dark);
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: var(--primary-blue);
-            z-index: 1000;
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-gray);
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-        nav ul li {
-            position: relative;
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: var(--accent-blue);
-        }
-        .main-container {
-            max-width: 100%;
-            margin: 0;
-            padding: 60px 10px 0 10px;
-            text-align: center;
-            flex: 1;
-            width: 100%;
-        }
-        .intro {
-            margin-bottom: 40px;
-            background: #FFFFFF;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-        .intro h1 {
-            color: var(--primary-blue);
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .intro p {
-            font-size: 1.1em;
-            max-width: 1000px;
-            margin: 0 auto 15px;
-        }
-        .highlight {
-            color: var(--accent-blue);
-            font-weight: bold;
-        }
-        .filter-container {
-            margin-bottom: 20px;
-        }
-        .filter-container input {
-            padding: 10px;
-            font-size: 1em;
-            font-family: 'Roboto', sans-serif;
-            background: #FFFFFF;
-            color: var(--text-dark);
-            border: 1px solid var(--border-gray);
-            border-radius: 5px;
-            outline: none;
-            width: 300px;
-            transition: border-color 0.3s ease;
-        }
-        .filter-container input:focus {
-            border-color: var(--accent-blue);
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 0 20px;
-        }
-        .university-card {
-            background: #FFFFFF;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            padding: 20px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .university-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .university-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
-        .university-card h3 {
-            color: var(--primary-blue);
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .university-card p {
-            color: var(--text-dark);
-            font-size: 0.9em;
-            text-align: center;
-        }
-        .profile-modal {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            overflow: auto;
-        }
-        .modal-content {
-            background-color: #FFFFFF;
-            margin: 10% auto;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            width: 80%;
-            max-width: 800px;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-        }
-        .close-button {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 30px;
-            font-weight: bold;
-            color: var(--text-dark);
-            cursor: pointer;
-        }
-        .close-button:hover {
-            color: var(--accent-blue);
-        }
-        .modal-header {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-gray);
-        }
-        .modal-header h2 {
-            color: var(--primary-blue);
-            font-size: 1.8em;
-        }
-        .modal-body {
-            line-height: 1.8;
-            text-align: justify; /* Texto justificado */
-        }
-        .modal-body p {
-            margin-bottom: 15px;
-        }
-        .modal-body ul {
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-        .modal-body li {
-            margin-bottom: 5px;
-        }
-        .footer {
-            background: var(--primary-blue);
-            color: #FFFFFF;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        .footer p {
-            font-size: 0.9em;
-        }
-        @media (max-width: 900px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-            nav ul li {
-                margin: 10px 0;
-                width: 100%;
-                text-align: center;
-            }
-            .intro h1 {
-                font-size: 2em;
-            }
-            .intro p {
-                font-size: 1em;
-                padding: 0 15px;
-            }
-            .filter-container input {
-                width: 100%;
-            }
-            .grid-container {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-            .modal-content {
-                margin: 20% auto;
-                width: 90%;
-                padding: 20px;
-            }
-        }
-        @media (max-width: 600px) {
-            nav {
-                position: static;
-            }
-            .main-container {
-                padding-top: 10px;
-            }
-            .intro h1 {
-                font-size: 1.5em;
-            }
-            .intro p {
-                font-size: 0.9em;
-            }
-            .grid-container {
-                grid-template-columns: 1fr;
-                padding: 0 10px;
-            }
-        }
-        /* Estilos para destacar términos de búsqueda */
-        .highlight-match {
-            background-color: #FFEB3B;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
+        :root{--primary-blue:#1A3C5A;--secondary-gray:#F5F6F5;--text-dark:#333;--accent-blue:#4A90E2;--border-gray:#D3D3D3}*{margin:0;padding:0;box-sizing:border-box}body{background-color:var(--secondary-gray);color:var(--text-dark);font-family:'Roboto',sans-serif;line-height:1.6;overflow-x:hidden;margin:0;padding:0;min-height:100vh;display:flex;flex-direction:column}nav{position:fixed;top:0;width:100%;background:var(--primary-blue);z-index:1000;padding:15px 0;border-bottom:1px solid var(--border-gray)}nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap}nav ul li{position:relative;margin:0 20px}nav ul li a{color:#FFF;text-decoration:none;font-size:1.1em;transition:color .3s ease}nav ul li a:hover{color:var(--accent-blue)}.main-container{max-width:100%;margin:0;padding:60px 10px 0;text-align:center;flex:1;width:100%}.intro{margin-bottom:40px;background:#FFF;padding:20px;border-radius:5px;box-shadow:0 2px 5px rgba(0,0,0,.05)}.intro h1{color:var(--primary-blue);font-size:2.5em;margin-bottom:20px}.intro p{font-size:1.1em;max-width:1000px;margin:0 auto 15px}.highlight{color:var(--accent-blue);font-weight:700}.filter-container{margin-bottom:20px}.filter-container input{padding:10px;font-size:1em;font-family:'Roboto',sans-serif;background:#FFF;color:var(--text-dark);border:1px solid var(--border-gray);border-radius:5px;outline:none;width:300px;transition:border-color .3s ease}.filter-container input:focus{border-color:var(--accent-blue)}.grid-container{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;padding:0 20px}.university-card{background:#FFF;border-radius:5px;box-shadow:0 2px 5px rgba(0,0,0,.05);padding:20px;cursor:pointer;transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;align-items:center}.university-card:hover{transform:translateY(-5px);box-shadow:0 5px 15px rgba(0,0,0,.1)}.university-card img{width:100px;height:100px;object-fit:contain;margin-bottom:15px;loading:lazy}.university-card h3{color:var(--primary-blue);margin-bottom:10px;text-align:center}.university-card p{color:var(--text-dark);font-size:.9em;text-align:center}.profile-modal{display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);overflow:auto}.modal-content{background-color:#FFF;margin:10% auto;padding:30px;border-radius:5px;box-shadow:0 5px 15px rgba(0,0,0,.3);width:80%;max-width:800px;max-height:80vh;overflow-y:auto;position:relative}.close-button{position:absolute;top:15px;right:20px;font-size:30px;font-weight:700;color:var(--text-dark);cursor:pointer}.close-button:hover{color:var(--accent-blue)}.modal-header{margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border-gray)}.modal-header h2{color:var(--primary-blue);font-size:1.8em}.modal-body{line-height:1.8;text-align:justify}.modal-body p{margin-bottom:15px}.modal-body ul{padding-left:20px;margin-bottom:15px}.modal-body li{margin-bottom:5px}.footer{background:var(--primary-blue);color:#FFF;text-align:center;padding:20px 0;margin-top:40px}@media (max-width:900px){nav ul{flex-direction:column;align-items:center;padding:10px 0}nav ul li{margin:10px 0;width:100%;text-align:center}.intro h1{font-size:2em}.intro p{font-size:1em;padding:0 15px}.filter-container input{width:100%}.grid-container{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.modal-content{margin:20% auto;width:90%;padding:20px}}@media (max-width:600px){nav{position:static}.main-container{padding-top:10px}.intro h1{font-size:1.5em}.intro p{font-size:.9em}.grid-container{grid-template-columns:1fr;padding:0 10px}}.highlight-match{background-color:#FFEB3B;padding:0 2px;border-radius:2px}
     </style>
 </head>
 <body>
-    <!-- Navegación -->
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -275,377 +19,187 @@
             <li><a href="#acerca">Acerca de</a></li>
         </ul>
     </nav>
-
-    <!-- Contenedor principal -->
     <div class="main-container" id="inicio">
-        <!-- Introducción -->
         <div class="intro">
             <h1>Perfiles de Egreso - Universidades Chilenas</h1>
             <p>Esta plataforma presenta los <span class="highlight">perfiles de egreso</span> de diversas universidades chilenas. Cada perfil refleja las competencias, valores y habilidades que caracterizan a los graduados de cada institución según su proyecto educativo.</p>
             <p>Utiliza el buscador para filtrar por nombre de universidad o por palabras clave presentes en los perfiles. Puedes usar abreviaturas como <span class="highlight">uchile</span>, <span class="highlight">uss</span>, <span class="highlight">puc</span>, etc.</p>
         </div>
-
-        <!-- Filtro -->
         <div class="filter-container" id="universidades">
-            <input type="text" id="search" placeholder="Buscar por universidad o palabras clave..." onkeyup="filterUniversities()">
+            <input type="text" id="search" placeholder="Buscar por universidad o palabras clave...">
         </div>
-
-        <!-- Grid de universidades -->
-        <div class="grid-container" id="university-grid">
-            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
-        </div>
-
-        <!-- Modal para mostrar el perfil completo -->
+        <div class="grid-container" id="university-grid"></div>
         <div id="profile-modal" class="profile-modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal()">×</span>
                 <div class="modal-header">
                     <h2 id="modal-title">Perfil de Egreso</h2>
                 </div>
-                <div class="modal-body" id="modal-body">
-                    <!-- El contenido del perfil se cargará dinámicamente -->
-                </div>
+                <div class="modal-body" id="modal-body"></div>
             </div>
         </div>
-
-        <!-- Sección Acerca de -->
-        <div class="intro" id="acerca" style="margin-top: 40px;">
+        <div class="intro" id="acerca" style="margin-top:40px;">
             <h1>Acerca de este Proyecto</h1>
             <p>Esta plataforma fue desarrollada para facilitar el acceso y comparación de los perfiles de egreso de las principales universidades chilenas. Los textos presentados corresponden a información oficial de cada institución.</p>
             <p>Desarrollado por: Leandro Torres Díaz, PhD.</p>
         </div>
     </div>
-
-    <!-- Footer -->
     <footer class="footer">
         <p>© 2025 - Perfiles de Egreso Universidades Chilenas</p>
     </footer>
-
     <script>
-        // Datos de universidades y sus perfiles de egreso
-        const universities = [
-            {
-                id: "uantof",
-                name: "Universidad de Antofagasta",
-                shortName: "uantof",
-                logoUrl: "https://transparencia.uantof.cl/vistas/plantillas_images/escudo.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uantof.txt"
-            },
-            {
-                id: "ubb",
-                name: "Universidad del Bío-Bío",
-                shortName: "ubb",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubb.txt"
-            },
-            {
-                id: "ubo",
-                name: "Universidad Bernardo O'Higgins",
-                shortName: "ubo",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/1_logo_ubo.png/250px-1_logo_ubo.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubo.txt"
-            },
-            {
-                id: "uchile",
-                name: "Universidad de Chile",
-                shortName: "uchile",
-                logoUrl: "https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-contenidos-generales/7910_0_escudouchiledescargar_S/jcr:content.jpg",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uchile.txt"
-            },
-            {
-                id: "ucm",
-                name: "Universidad Católica del Maule",
-                shortName: "ucm",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Escudo_UCM.png/960px-Escudo_UCM.png?20210817151245",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ucm.txt"
-            },
-            {
-                id: "ucn",
-                name: "Universidad Católica del Norte",
-                shortName: "ucn",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_Universidad_Cat%C3%B3lica_del_Norte.jpg",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ucn.txt"
-            },
-            {
-                id: "uct",
-                name: "Universidad Católica de Temuco",
-                shortName: "uct",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Universidad_Cat%C3%B3lica_de_Temuco_logo.jpg/960px-Universidad_Cat%C3%B3lica_de_Temuco_logo.jpg?20150420080123",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uct.txt"
-            },
-            {
-                id: "udd",
-                name: "Universidad del Desarrollo",
-                shortName: "udd",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/18/Logo_final_udd_tz.jpg",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/udd.txt"
-            },
-            {
-                id: "ufro",
-                name: "Universidad de La Frontera",
-                shortName: "ufro",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Logo_Nuevo_Ufro.jpg/960px-Logo_Nuevo_Ufro.jpg?20100526154504",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ufro.txt"
-            },
-            {
-                id: "ulagos",
-                name: "Universidad de Los Lagos",
-                shortName: "ulagos",
-                logoUrl: "https://www.educalt.com/wp-content/uploads/2021/10/ULAGOS_ESC-300x300.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ulagos.txt"
-            },
-            {
-                id: "unab",
-                name: "Universidad Andrés Bello",
-                shortName: "unab",
-                logoUrl: "https://vinculacion.unab.cl/wp-content/uploads/2018/06/fondo-transparente-logo-color-con-texto-azul.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/unab.txt"
-            },
-            {
-                id: "unach",
-                name: "Universidad Adventista de Chile",
-                shortName: "unach",
-                logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg5a9_Kk2OheR22v-7ekJ_6TO1XvoN5FhsDw&s",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/unach.txt"
-            },
-            {
-                id: "usach",
-                name: "Universidad de Santiago de Chile",
-                shortName: "usach",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Escudo_de_la_Universidad_de_Santiago-3.svg/504px-Escudo_de_la_Universidad_de_Santiago-3.svg.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/usach.txt"
-            },
-            {
-                id: "uss",
-                name: "Universidad San Sebastián",
-                shortName: "uss",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Logo_Universidad_san_sebastian.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uss.txt"
-            },
-            {
-                id: "utem",
-                name: "Universidad Tecnológica Metropolitana",
-                shortName: "utem",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_UTEM.png?20150417163646",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/utem.txt"
-            },
-            {
-                id: "puc",
-                name: "Pontificia Universidad Católica de Chile",
-                shortName: "puc",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg/800px-Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg.png",
-                profileUrl: "https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/puc.txt"
-            }
+        const universities=[
+            {id:"uantof",name:"Universidad de Antofagasta",shortName:"uantof",logoUrl:"https://transparencia.uantof.cl/vistas/plantillas_images/escudo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uantof.txt"},
+            {id:"ubb",name:"Universidad del Bío-Bío",shortName:"ubb",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubb.txt"},
+            {id:"ubo",name:"Universidad Bernardo O'Higgins",shortName:"ubo",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/1_logo_ubo.png/250px-1_logo_ubo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubo.txt"},
+            {id:"uchile",name:"Universidad de Chile",shortName:"uchile",logoUrl:"https://portaluchile.uchile.cl//.imaging/default/dam/imagenes/Uchile/imagenes-contenidos-generales/7910_0_escudouchiledescargar_S/jcr:content.jpg",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uchile.txt"},
+            {id:"ucm",name:"Universidad Católica del Maule",shortName:"ucm",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Escudo_UCM.png/960px-Escudo_UCM.png?20210817151245",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ucm.txt"},
+            {id:"ucn",name:"Universidad Católica del Norte",shortName:"ucn",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_Universidad_Cat%C3%B3lica_del_Norte.jpg",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ucn.txt"},
+            {id:"uct",name:"Universidad Católica de Temuco",shortName:"uct",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Universidad_Cat%C3%B3lica_de_Temuco_logo.jpg/960px-Universidad_Cat%C3%B3lica_de_Temuco_logo.jpg?20150420080123",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uct.txt"},
+            {id:"udd",name:"Universidad del Desarrollo",shortName:"udd",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/1/18/Logo_final_udd_tz.jpg",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/udd.txt"},
+            {id:"ufro",name:"Universidad de La Frontera",shortName:"ufro",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Logo_Nuevo_Ufro.jpg/960px-Logo_Nuevo_Ufro.jpg?20100526154504",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ufro.txt"},
+            {id:"ulagos",name:"Universidad de Los Lagos",shortName:"ulagos",logoUrl:"https://www.educalt.com/wp-content/uploads/2021/10/ULAGOS_ESC-300x300.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ulagos.txt"},
+            {id:"unab",name:"Universidad Andrés Bello",shortName:"unab",logoUrl:"https://vinculacion.unab.cl/wp-content/uploads/2018/06/fondo-transparente-logo-color-con-texto-azul.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/unab.txt"},
+            {id:"unach",name:"Universidad Adventista de Chile",shortName:"unach",logoUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg5a9_Kk2OheR22v-7ekJ_6TO1XvoN5FhsDw&s",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/unach.txt"},
+            {id:"usach",name:"Universidad de Santiago de Chile",shortName:"usach",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Escudo_de_la_Universidad_de_Santiago-3.svg/504px-Escudo_de_la_Universidad_de_Santiago-3.svg.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/usach.txt"},
+            {id:"uss",name:"Universidad San Sebastián",shortName:"uss",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/c/c4/Logo_Universidad_san_sebastian.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uss.txt"},
+            {id:"utem",name:"Universidad Tecnológica Metropolitana",shortName:"utem",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_UTEM.png?20150417163646",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/utem.txt"},
+            {id:"puc",name:"Pontificia Universidad Católica de Chile",shortName:"puc",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg/800px-Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/puc.txt"}
         ];
-
-        // Cache para almacenar los perfiles ya descargados
-        const profileCache = {};
-
-        // Generar las tarjetas de universidades
-        function generateUniversityCards() {
-            const grid = document.getElementById('university-grid');
-            grid.innerHTML = '';
-
-            universities.forEach(university => {
-                const card = document.createElement('div');
-                card.className = 'university-card';
-                card.setAttribute('data-id', university.id);
-                card.setAttribute('data-name', university.name.toLowerCase());
-                card.setAttribute('data-shortname', university.shortName.toLowerCase());
-                card.onclick = () => openProfileModal(university);
-
-                card.innerHTML = `
-                    <img src="${university.logoUrl}" alt="${university.name} Logo" onerror="this.src='https://via.placeholder.com/100x100?text=${university.shortName}'">
-                    <h3>${university.name}</h3>
-                    <p>${university.shortName}</p>
-                `;
-
-                grid.appendChild(card);
+        const profileCache={};
+        const grid=document.getElementById('university-grid');
+        const searchInput=document.getElementById('search');
+        
+        function generateUniversityCards(){
+            grid.innerHTML='';
+            universities.forEach(u=>{
+                const c=document.createElement('div');
+                c.className='university-card';
+                c.dataset.id=u.id;
+                c.dataset.name=u.name.toLowerCase();
+                c.dataset.shortname=u.shortName.toLowerCase();
+                c.innerHTML=`<img src="${u.logoUrl}" alt="${u.name} Logo" loading="lazy" onerror="this.src='https://via.placeholder.com/100x100?text=${u.shortName}'"><h3>${u.name}</h3><p>${u.shortName}</p>`;
+                c.addEventListener('click',()=>openProfileModal(u));
+                grid.appendChild(c);
             });
         }
-
-        // Filtrar universidades según el término de búsqueda
-        function filterUniversities() {
-            const searchTerm = document.getElementById('search').value.toLowerCase();
-            const cards = document.getElementsByClassName('university-card');
-
-            if (searchTerm === '') {
-                // Mostrar todas las tarjetas si no hay término de búsqueda
-                Array.from(cards).forEach(card => {
-                    card.style.display = 'flex';
-                });
+        
+        function debounce(func,wait){
+            let timeout;
+            return function executedFunction(...args){
+                const later=()=>{
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout=setTimeout(later,wait);
+            };
+        }
+        
+        const filterUniversities=debounce(async()=>{
+            const t=searchInput.value.toLowerCase();
+            const cards=[...grid.children];
+            if(!t){
+                cards.forEach(c=>c.style.display='flex');
                 return;
             }
-
-            // Buscar en los perfiles de egreso el término (si ya están cargados)
-            const searchInProfiles = async () => {
-                for (const university of universities) {
-                    let cardElement = document.querySelector(`.university-card[data-id="${university.id}"]`);
-                    
-                    // Primero verificar si el nombre o abreviatura coincide
-                    const nameMatch = university.name.toLowerCase().includes(searchTerm) || 
-                                     university.shortName.toLowerCase().includes(searchTerm) ||
-                                     university.id.includes(searchTerm);
-                    
-                    if (nameMatch) {
-                        cardElement.style.display = 'flex';
-                        continue; // Si ya coincide por nombre, no buscar en el perfil
-                    }
-
-                    // Buscar en el contenido del perfil
-                    let profile = profileCache[university.id];
-                    if (!profile) {
-                        try {
-                            const response = await fetch(university.profileUrl);
-                            profile = await response.text();
-                            profileCache[university.id] = profile; // Guardar en caché
-                        } catch (error) {
-                            console.error(`Error al cargar el perfil de ${university.name}:`, error);
-                            cardElement.style.display = 'none';
-                            continue;
-                        }
-                    }
-
-                    // Verificar si el término de búsqueda está en el perfil
-                    if (profile.toLowerCase().includes(searchTerm)) {
-                        cardElement.style.display = 'flex';
-                    } else {
-                        cardElement.style.display = 'none';
+            for(const u of universities){
+                const c=grid.querySelector(`[data-id="${u.id}"]`);
+                const n=u.name.toLowerCase().includes(t)||u.shortName.toLowerCase().includes(t)||u.id.includes(t);
+                if(n){
+                    c.style.display='flex';
+                    continue;
+                }
+                let p=profileCache[u.id];
+                if(!p){
+                    try{
+                        p=await(await fetch(u.profileUrl)).text();
+                        profileCache[u.id]=p;
+                    }catch(e){
+                        console.error(`Error loading ${u.name}:`,e);
+                        c.style.display='none';
+                        continue;
                     }
                 }
-            };
-
-            searchInProfiles();
-        }
-
-        // Abrir el modal con el perfil de egreso
-        async function openProfileModal(university) {
-            const modal = document.getElementById('profile-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const modalBody = document.getElementById('modal-body');
-
-            modalTitle.textContent = `Perfil de Egreso - ${university.name}`;
-            modalBody.innerHTML = '<p>Cargando perfil de egreso...</p>';
-            modal.style.display = 'block';
-
-            try {
-                let profile = profileCache[university.id];
-                if (!profile) {
-                    const response = await fetch(university.profileUrl);
-                    profile = await response.text();
-                    profileCache[university.id] = profile; // Guardar en caché
+                c.style.display=p.toLowerCase().includes(t)?'flex':'none';
+            }
+        },250);
+        
+        async function openProfileModal(u){
+            const m=document.getElementById('profile-modal'),
+                  t=document.getElementById('modal-title'),
+                  b=document.getElementById('modal-body');
+            t.textContent=`Perfil de Egreso - ${u.name}`;
+            b.innerHTML='<p>Cargando...</p>';
+            m.style.display='block';
+            try{
+                let p=profileCache[u.id];
+                if(!p){
+                    p=await(await fetch(u.profileUrl)).text();
+                    profileCache[u.id]=p;
                 }
-
-                // Procesar el texto para formatear correctamente
-                const formattedProfile = formatProfile(profile);
-                
-                // Resaltar términos de búsqueda si hay alguno
-                const searchTerm = document.getElementById('search').value.toLowerCase();
-                if (searchTerm && searchTerm.length > 2) {
-                    modalBody.innerHTML = highlightSearchTerm(formattedProfile, searchTerm);
-                } else {
-                    modalBody.innerHTML = formattedProfile;
-                }
-            } catch (error) {
-                console.error(`Error al cargar el perfil de ${university.name}:`, error);
-                modalBody.innerHTML = '<p>Error al cargar el perfil de egreso. Por favor, intenta nuevamente más tarde.</p>';
+                const f=formatProfile(p);
+                b.innerHTML=searchInput.value.length>2?highlightSearchTerm(f,searchInput.value.toLowerCase()):f;
+            }catch(e){
+                console.error(`Error loading ${u.name}:`,e);
+                b.innerHTML='<p>Error al cargar el perfil.</p>';
             }
         }
-
-        // Formatear el perfil para mostrar correctamente (párrafos, listas, etc.)
-        function formatProfile(profileText) {
-            // Dividir por líneas
-            const lines = profileText.split('\n');
-            let formattedHTML = '';
-            let inList = false;
-
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i].trim();
-                
-                if (line === '') {
-                    // Línea vacía
-                    if (inList) {
-                        formattedHTML += '</ul>';
-                        inList = false;
+        
+        function formatProfile(t){
+            const l=t.split('\n');
+            let h='',inList=false;
+            for(const line of l){
+                const s=line.trim();
+                if(!s){
+                    if(inList){
+                        h+='</ul>';
+                        inList=false;
                     }
-                    formattedHTML += '<br>';
-                } else if (line.startsWith('-')) {
-                    // Elemento de lista
-                    if (!inList) {
-                        formattedHTML += '<ul>';
-                        inList = true;
+                    h+='<br>';
+                }else if(s.startsWith('-')){
+                    if(!inList){
+                        h+='<ul>';
+                        inList=true;
                     }
-                    const listItem = line.substring(1).trim();
-                    formattedHTML += `<li>${listItem}</li>`;
-                } else {
-                    // Párrafo normal
-                    if (inList) {
-                        formattedHTML += '</ul>';
-                        inList = false;
+                    h+=`<li>${s.substring(1).trim()}</li>`;
+                }else{
+                    if(inList){
+                        h+='</ul>';
+                        inList=false;
                     }
-                    
-                    // Verificar si es un título o subtítulo
-                    if (line.toUpperCase() === line && line.length > 10) {
-                        formattedHTML += `<h3>${line}</h3>`;
-                    } else {
-                        formattedHTML += `<p>${line}</p>`;
-                    }
+                    h+=s.toUpperCase()===s&&s.length>10?`<h3>${s}</h3>`:`<p>${s}</p>`;
                 }
             }
-
-            // Cerrar la lista si quedó abierta
-            if (inList) {
-                formattedHTML += '</ul>';
+            if(inList)h+='</ul>';
+            return h;
+        }
+        
+        function highlightSearchTerm(h,t){
+            if(!t)return h;
+            const r=new RegExp(`(${t})`,'gi'),
+                  p=new DOMParser(),
+                  d=p.parseFromString(h,'text/html');
+            function n(node){
+                if(node.nodeType===3&&node.textContent.trim()){
+                    const s=document.createElement('span');
+                    s.innerHTML=node.textContent.replace(r,'<span class="highlight-match">$1</span>');
+                    node.parentNode.replaceChild(s,node);
+                }else if(node.nodeType===1)node.childNodes.forEach(n);
             }
-
-            return formattedHTML;
+            n(d.body);
+            return d.body.innerHTML;
         }
-
-        // Resaltar término de búsqueda en el texto
-        function highlightSearchTerm(html, term) {
-            if (!term) return html;
-            
-            // Crear expresión regular para buscar el término (case insensitive)
-            const regex = new RegExp(`(${term})`, 'gi');
-            
-            // Reemplazar dentro de las etiquetas HTML, teniendo cuidado de no modificar las etiquetas
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            
-            // Función recursiva para procesar nodos de texto
-            function processNode(node) {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    if (node.textContent.trim() !== '') {
-                        const span = document.createElement('span');
-                        span.innerHTML = node.textContent.replace(regex, '<span class="highlight-match">$1</span>');
-                        node.parentNode.replaceChild(span, node);
-                    }
-                } else if (node.nodeType === Node.ELEMENT_NODE) {
-                    Array.from(node.childNodes).forEach(processNode);
-                }
-            }
-            
-            processNode(doc.body);
-            return doc.body.innerHTML;
+        
+        function closeModal(){
+            document.getElementById('profile-modal').style.display='none';
         }
-
-        // Cerrar el modal
-        function closeModal() {
-            document.getElementById('profile-modal').style.display = 'none';
-        }
-
-        // Cerrar el modal al hacer clic fuera del contenido
-        window.onclick = function(event) {
-            const modal = document.getElementById('profile-modal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // Inicializar la página
-        document.addEventListener('DOMContentLoaded', function() {
-            generateUniversityCards();
+        
+        window.addEventListener('click',e=>{
+            if(e.target===document.getElementById('profile-modal'))closeModal();
         });
+        searchInput.addEventListener('input',filterUniversities);
+        document.addEventListener('DOMContentLoaded',generateUniversityCards);
     </script>
 </body>
 </html>
