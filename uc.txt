@@ -1,0 +1,19 @@
+<div align="justify">
+
+El químico farmacéutico o química farmacéutica es un/a profesional de la salud experto/a en medicamentos, capacitado/a para informar y asesorar de manera ética y rigurosa a la comunidad y a otros profesionales del área sobre el uso racional de los mismos. 
+
+Contempla como parte de su labor fomentar una mejor calidad de vida a través de su participación en políticas de salud pública. 
+
+Están capacitados/as para realizar investigación científica, junto con diseñar y evaluar tanto productos farmacéuticos como cosméticos, además de implementar y validar sus sistemas de producción.
+
+</div>
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Rol Profesional                        | Experto/a en medicamentos, con responsabilidad ética y asesoría técnica                         |
+| Uso Racional de Medicamentos           | Promoción y orientación hacia un uso responsable y seguro                                        |
+| Salud Pública                          | Participación activa en políticas públicas para mejorar la calidad de vida                       |
+| Investigación                          | Capacitado/a para desarrollar ciencia aplicada en su disciplina                                  |
+| Desarrollo de Productos                | Diseño, evaluación, implementación y validación de productos farmacéuticos y cosméticos          |
