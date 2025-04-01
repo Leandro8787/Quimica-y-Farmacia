@@ -1,17 +1,32 @@
-Perfil de Egreso - Química y Farmacia (UCN)
-El/la Licenciado/a en Química y Farmacia de la Universidad Católica del Norte tiene el siguiente
-perfil:
-1. Es un/a profesional de la Salud, con formación ética y responsabilidad social, comprometido/a
-con los valores del Humanismo Cristiano.
-2. Concibe su profesión desde una perspectiva solidaria de servicio, cuya motivación y disposición
-es hacia un ejercicio profesional al servicio de la sociedad.
-3. El desarrollo del ejercicio profesional del/a Químico Farmacéutico UCN, se enmarca dentro de la
-normativa legal vigente, siendo experto/a en fármacos, 
-   responsable de la dispensación y uso racional de medicamentos.
-4. Los campos profesionales en los que se puede desempeñar son Farmacias Comunitarias y
-Asistenciales brindando atención farmacéutica, además de la 
-   Industria Farmacéutica, Cosmética y Laboratorio Clínico o Forense.
-5. Para llevar a cabo su labor, el/la Químico Farmacéutico UCN, se integra a equipos
-multidisciplinarios, con espíritu emprendedor y apoyándose en la 
-   tecnología respondiendo a problemas o necesidades, generando innovación, con énfasis en la
-Toxicología, Farmacia Asistencial y Farmacia Clínica.
+El/la Licenciado/a en Química y Farmacia de la Universidad Católica del Norte tiene el siguiente perfil:
+
+Es un/a profesional de la Salud, con formación ética y responsabilidad social, comprometido/a con los valores del Humanismo Cristiano.
+
+Concibe su profesión desde una perspectiva solidaria de servicio, cuya motivación y disposición es hacia un ejercicio profesional al servicio de la sociedad.
+
+El desarrollo del ejercicio profesional del/a Químico Farmacéutico UCN se enmarca dentro de la normativa legal vigente, siendo experto/a en fármacos, responsable de la dispensación y uso racional de medicamentos.
+
+## Campos Profesionales
+
+- Farmacias Comunitarias y Asistenciales, brindando atención farmacéutica.
+- Industria Farmacéutica y Cosmética.
+- Laboratorio Clínico o Forense.
+
+Para llevar a cabo su labor, el/la Químico Farmacéutico UCN:
+
+- Se integra a equipos multidisciplinarios.
+- Tiene un espíritu emprendedor.
+- Se apoya en la tecnología para responder a problemas o necesidades.
+- Genera innovación con énfasis en la Toxicología, Farmacia Asistencial y Farmacia Clínica.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Formación                              | Ética, responsabilidad social y valores del Humanismo Cristiano                                  |
+| Perspectiva Profesional                | Servicio solidario a la sociedad                                                                 |
+| Especialización                        | Fármacos y uso racional de medicamentos                                                          |
+| Normativa                              | Ejercicio profesional dentro del marco legal vigente                                             |
+| Campos de Ejercicio                    | Farmacias comunitarias/asistenciales, industria farmacéutica/cosmética, laboratorios clínicos/forenses |
+| Trabajo en Equipo                      | Integración a equipos multidisciplinarios                                                        |
+| Innovación                             | Espíritu emprendedor, uso de tecnología y énfasis en Toxicología, Farmacia Asistencial y Clínica |
