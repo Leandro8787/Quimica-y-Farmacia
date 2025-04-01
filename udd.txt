@@ -1,14 +1,18 @@
-Perfil de Egreso - Química y Farmacia (Universidad del Desarrollo)
-El Químico Farmacéutico de la Universidad del Desarrollo estará preparado para gestionar
-eficazmente el desarrollo, 
-control y distribución de medicamentos, garantizando acceso seguro y equitativo a las terapias
-farmacológicas. 
-Liderará proyectos de investigación, innovación y emprendimiento en el sector farmacéutico,
-desarrollando soluciones 
-tecnológicas para el área de la salud.
-Con enfoque en el paciente, colaborará en equipos interdisciplinarios para optimizar el uso de
-fármacos y promover 
-la seguridad del paciente. Además, gestionará eficazmente establecimientos farmacéuticos e
-impulsará proyectos de 
-investigación clínica y traslacional, promoviendo el uso racional de medicamentos y la mejora
-continua en salud pública.
+El Químico Farmacéutico de la Universidad del Desarrollo estará preparado para gestionar eficazmente el desarrollo, control y distribución de medicamentos, garantizando acceso seguro y equitativo a las terapias farmacológicas.
+
+Liderará proyectos de investigación, innovación y emprendimiento en el sector farmacéutico, desarrollando soluciones tecnológicas para el área de la salud.
+
+Con enfoque en el paciente, colaborará en equipos interdisciplinarios para optimizar el uso de fármacos y promover la seguridad del paciente.
+
+Además, gestionará eficazmente establecimientos farmacéuticos e impulsará proyectos de investigación clínica y traslacional, promoviendo el uso racional de medicamentos y la mejora continua en salud pública.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Gestión de Medicamentos                | Desarrollo, control y distribución de medicamentos con acceso seguro y equitativo                |
+| Investigación e Innovación            | Liderazgo en proyectos científicos, tecnológicos y de emprendimiento en salud                    |
+| Enfoque en el Paciente                 | Colaboración interdisciplinaria para optimizar terapias y promover la seguridad                  |
+| Gestión de Establecimientos           | Administración eficiente de centros farmacéuticos                                                |
+| Investigación Clínica y Traslacional  | Impulso a estudios que mejoran la salud pública                                                  |
+| Uso Racional del Medicamento          | Promoción del uso racional y mejora continua en salud pública                                    |
