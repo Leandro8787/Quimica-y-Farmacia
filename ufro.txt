@@ -1,14 +1,22 @@
-Perfil de Egreso - Química y Farmacia (UFRO)
-El Químico Farmacéutico de la Universidad de La Frontera es un profesional de la salud con
-conocimientos en ciencias químico-biológicas, 
-farmacéuticas y formación clínica que lo habilita para realizar técnicas analíticas e interpretar sus
-resultados; participar activamente como 
-parte del equipo sanitario en la prevención en salud y bienestar de la población, mediante una
-atención farmacéutica oportuna; aplicar sus 
-conocimientos en la dispensación, abastecimiento, uso correcto de medicamentos, como también
-en procesos de diseño, producción y evaluación 
-de productos farmacéuticos; además de participar en políticas de medicamentos y salud pública.
-Actúa con responsabilidad social y ética profesional en su quehacer, posee condiciones de líder y
-capacidad de trabajar en equipo. 
-Destaca por su capacidad analítica, trabajando en forma creativa y proactiva, como profesional que
-está al servicio de la comunidad.
+El Químico Farmacéutico de la Universidad de La Frontera es un profesional de la salud con conocimientos en ciencias químico-biológicas, farmacéuticas y formación clínica que lo habilita para:
+
+- Realizar técnicas analíticas e interpretar sus resultados.
+- Participar activamente como parte del equipo sanitario en la prevención en salud y bienestar de la población mediante una atención farmacéutica oportuna.
+- Aplicar sus conocimientos en la dispensación, abastecimiento y uso correcto de medicamentos.
+- Participar en procesos de diseño, producción y evaluación de productos farmacéuticos.
+- Contribuir en políticas de medicamentos y salud pública.
+
+Actúa con responsabilidad social y ética profesional en su quehacer. Posee condiciones de liderazgo y capacidad para trabajar en equipo. Destaca por su capacidad analítica, trabajando en forma creativa y proactiva, como profesional al servicio de la comunidad.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Formación                              | Ciencias químico-biológicas, farmacéuticas y formación clínica                                   |
+| Técnicas Analíticas                    | Capacidad para ejecutar e interpretar análisis                                                   |
+| Atención Farmacéutica                 | Participación en prevención y bienestar mediante atención oportuna                               |
+| Uso de Medicamentos                    | Dispensación, abastecimiento y uso racional                                                      |
+| Producción Farmacéutica               | Diseño, producción y evaluación de productos farmacéuticos                                       |
+| Salud Pública                          | Participación en políticas de medicamentos y salud pública                                       |
+| Valores Profesionales                  | Responsabilidad social, ética, liderazgo y trabajo en equipo                                     |
+| Enfoque Profesional                    | Capacidad analítica, creatividad, proactividad y compromiso con la comunidad                     |
