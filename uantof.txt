@@ -1,4 +1,4 @@
-Perfil de Egreso - Química y Farmacia (UAntof)
+# Perfil de Egreso - Química y Farmacia (UAntof)
 
 El y la egresada(o) de Químico Farmacéutica de la Universidad de Antofagasta es un o una profesional del área de la Salud, con formación laica, ética y con amplio compromiso con el desarrollo sustentable.
 
@@ -12,7 +12,9 @@ Poseen el conocimiento científico y técnico que les permite ser profesionales 
 
 Son capaces de interactuar comunicativamente en inglés a nivel 6,5 de acuerdo al Marco Europeo Común de Referencia.
 
-| Elemento Clave                           | Descripción                                                                 |
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                            |
 |----------------------------------------|-----------------------------------------------------------------------------|
 | Formación                              | Laica, ética y con compromiso con el desarrollo sustentable                |
 | Especialidad                           | Medicamentos y sustancias biológicamente activas                           |
