@@ -1,29 +1,21 @@
-Perfil de Egreso - Química y Farmacia (USACH)
-1- Podrás comunicarte apropiadamente en forma oral y escrita, con diferentes audiencias, tales
-como: profesionales de salud, 
-técnicos y auxiliares asociados al ámbito sanitario, usuarios y población en general.
-2- Podrás liderar los procesos de funcionamiento de la farmacia desde el punto de vista
-fármaco-económico y administrativo.
-3- 
-Podrás 
-dirigir 
-personal 
-técnico 
-y 
-auxiliar 
-involucrado 
-en 
-procesos 
-del 
-campo
-químico-farmacéutico. Controlar la producción 
-de fármacos y productos de interés sanitario de uso humano, cosmético y veterinario, utilizando
-procesos de gestión de calidad.
-4- Podrás planificar, diseñar y ejecutar investigación científica farmacológica, elaborando las
-conclusiones sobre la base 
-de los resultados experimentales.
-5- Podrás dispensar medicamentos y productos de interés sanitario en el ámbito comunitario y
-asistencial, garantizando el 
-cumplimiento de las prescripciones médicas y proporcionando al paciente el medicamento en la
-forma farmacéutica, dosis y 
-vía de administración prescrita.
+<div align="justify">
+
+Podrás comunicarte apropiadamente en forma oral y escrita, con diferentes audiencias, tales como: profesionales de salud, técnicos y auxiliares asociados al ámbito sanitario, usuarios y población en general. Podrás liderar los procesos de funcionamiento de la farmacia desde el punto de vista fármaco-económico y administrativo.
+
+Podrás dirigir personal técnico y auxiliar involucrado en procesos del campo químico-farmacéutico. Controlar la producción de fármacos y productos de interés sanitario de uso humano, cosmético y veterinario, utilizando procesos de gestión de calidad.
+
+Podrás planificar, diseñar y ejecutar investigación científica farmacológica, elaborando las conclusiones sobre la base de los resultados experimentales.
+
+Podrás dispensar medicamentos y productos de interés sanitario en el ámbito comunitario y asistencial, garantizando el cumplimiento de las prescripciones médicas y proporcionando al paciente el medicamento en la forma farmacéutica, dosis y vía de administración prescrita.
+
+</div>
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Comunicación                           | Oral y escrita, dirigida a profesionales de salud, técnicos y usuarios                           |
+| Liderazgo y Gestión Farmacéutica       | Dirección de procesos fármaco-económicos y administrativos                                        |
+| Dirección Técnica                      | Supervisión de personal técnico y control de producción farmacéutica con calidad                  |
+| Investigación                          | Planificación, diseño y ejecución de estudios científicos farmacológicos                          |
+| Dispensación de Medicamentos           | Garantía del cumplimiento de prescripción médica y correcta administración al paciente            |
