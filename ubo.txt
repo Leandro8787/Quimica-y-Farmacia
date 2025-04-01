@@ -30,4 +30,4 @@ Consciente de su libertad, se hace cargo de sus decisiones y enfrenta con compro
 | Ámbitos de Ejercicio                   | Servicios farmacéuticos, farmacovigilancia, producción, calidad e investigación                  |
 | Perfil Profesional                     | Crítico, reflexivo, ordenado, constante, líder y colaborativo                                    |
 | Compromiso Ético y Social              | Espíritu de servicio, conciencia de la libertad, responsabilidad en sus decisiones               |
-"""
+
