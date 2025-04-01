@@ -1,62 +1,50 @@
-Perfil de Egreso - Química y Farmacia (UNAB)
-El Químico Farmacéutico de la Universidad Andrés Bello sustenta su quehacer profesional en los
-valores de excelencia, 
-integridad, respeto, pluralismo y responsabilidad.
-Posee el conocimiento científico y técnico que le permite ser un profesional integral en la atención
-de salud, con 
-compromiso ético. Utiliza el método científico como una herramienta para resolver problemas
-relacionados con el quehacer 
-profesional.
-Se distingue por su sello formativo en atención clínica farmacéutica, conduciendo su desempeño
-hacia la prevención, 
-detección y resolución de problemas de salud relacionados con los medicamentos y su impacto en
-el bienestar individual 
-y comunitario, así como en la promoción de estilos de vida saludables a lo largo del ciclo vital. Así
-mismo, se destaca 
-por su desempeño en gestión de calidad de servicios, procesos y productos, llevando una
-administración eficiente de los 
-recursos humanos, físicos y financieros, en las áreas donde ejerce.
-Su formación es complementada con el desarrollo de habilidades en pensamiento cuantitativo,
-analítico y crítico, 
-comunicación, inglés, trabajo en equipo y responsabilidad social.
-Es un profesional de la salud, responsable de orientar a la comunidad en el uso correcto de
-medicamentos para el 
-mejoramiento de su calidad de vida. Puede integrar equipos de investigación en diferentes áreas de
-la profesión; es 
-competente para liderar las acciones relacionadas con estudios de laboratorio clínico y forense;
-desarrollo, producción, 
-calidad y gestión de la industria farmacéutica; dispensación de los fármacos y su efecto en la salud
-del paciente.
-Ámbitos de Realización y Resultados de Aprendizaje:
-I. Farmacia
-- Validar la prescripción médica para garantizar la efectividad del medicamento y seguridad del
-paciente.
-- Dispensar medicamentos, cosméticos, insumos y alimentos de uso médico a usuarios de farmacia
-comunitaria y hospitalaria.
+<div align="justify">
+
+El Químico Farmacéutico de la Universidad Andrés Bello sustenta su quehacer profesional en los valores de excelencia, integridad, respeto, pluralismo y responsabilidad.
+
+Posee el conocimiento científico y técnico que le permite ser un profesional integral en la atención de salud, con compromiso ético. Utiliza el método científico como una herramienta para resolver problemas relacionados con el quehacer profesional.
+
+Se distingue por su sello formativo en atención clínica farmacéutica, conduciendo su desempeño hacia la prevención, detección y resolución de problemas de salud relacionados con los medicamentos y su impacto en el bienestar individual y comunitario, así como en la promoción de estilos de vida saludables a lo largo del ciclo vital. Así mismo, se destaca por su desempeño en gestión de calidad de servicios, procesos y productos, llevando una administración eficiente de los recursos humanos, físicos y fin...
+
+Su formación es complementada con el desarrollo de habilidades en pensamiento cuantitativo, analítico y crítico, comunicación, inglés, trabajo en equipo y responsabilidad social.
+
+Es un profesional de la salud, responsable de orientar a la comunidad en el uso correcto de medicamentos para el mejoramiento de su calidad de vida. Puede integrar equipos de investigación en diferentes áreas de la profesión; es competente para liderar las acciones relacionadas con estudios de laboratorio clínico y forense; desarrollo, producción, calidad y gestión de la industria farmacéutica; dispensación de los fármacos y su efecto en la salud del paciente.
+
+</div>
+
+## Ámbitos de Realización y Resultados de Aprendizaje
+
+**I. Farmacia**
+- Validar la prescripción médica para garantizar la efectividad del medicamento y seguridad del paciente.
+- Dispensar medicamentos, cosméticos, insumos y alimentos de uso médico a usuarios de farmacia comunitaria y hospitalaria.
 - Informar sospechas de reacciones adversas a la autoridad competente en fármacovigilancia.
-- Realizar educación sanitaria para promover la utilización racional del medicamento en atención
-primaria.
-II. Industria Farmacéutica y Cosmética
+- Realizar educación sanitaria para promover la utilización racional del medicamento en atención primaria.
+
+**II. Industria Farmacéutica y Cosmética**
 - Elaborar medicamentos, cosméticos conforme a normas nacionales e internacionales vigentes.
-- Realizar gestión de aseguramiento de la calidad en el proceso, pre y post producción de
-medicamentos y cosméticos.
-III. Atención Clínico Farmacéutica
-- Realizar actividades relacionadas con la detección, evaluación, comprensión, manejo y prevención
-de efectos adversos 
-  de medicamentos, dispositivos médicos y cosméticos.
-- Efectuar el seguimiento fármacoterapéutico de pacientes con patologías de mayor prevalencia,
-como integrante del equipo 
-  de salud.
-- Ejecutar estudios clínicos, para determinar diferencias en efectividad y seguridad de alternativas
-de tratamientos 
-  farmacológicos autorizados en el país.
-IV. Laboratorio Clínico y Forense
-- Validar técnicas analíticas en laboratorio químico, clínico y forense, para asegurar la calidad y
-confiabilidad de los 
-  resultados.
-- Analizar muestras biológicas y periciales para apoyar el diagnóstico clínico y la investigación
-médico legal.
-V. Gestión Comercial y Administración de Recursos
+- Realizar gestión de aseguramiento de la calidad en el proceso, pre y post producción de medicamentos y cosméticos.
+
+**III. Atención Clínico Farmacéutica**
+- Realizar actividades relacionadas con la detección, evaluación, comprensión, manejo y prevención de efectos adversos de medicamentos, dispositivos médicos y cosméticos.
+- Efectuar el seguimiento fármacoterapéutico de pacientes con patologías de mayor prevalencia, como integrante del equipo de salud.
+- Ejecutar estudios clínicos, para determinar diferencias en efectividad y seguridad de alternativas de tratamientos farmacológicos autorizados en el país.
+
+**IV. Laboratorio Clínico y Forense**
+- Validar técnicas analíticas en laboratorio químico, clínico y forense, para asegurar la calidad y confiabilidad de los resultados.
+- Analizar muestras biológicas y periciales para apoyar el diagnóstico clínico y la investigación médico legal.
+
+**V. Gestión Comercial y Administración de Recursos**
 - Administrar recursos humanos, físicos y financieros de establecimientos de salud y farmacéuticos.
-- Gestionar la comercialización, logística, distribución y marketing de productos farmacéuticos,
-médicos y cosméticos.
+- Gestionar la comercialización, logística, distribución y marketing de productos farmacéuticos, médicos y cosméticos.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Valores                                | Excelencia, integridad, respeto, pluralismo y responsabilidad                                    |
+| Formación Científica                   | Conocimientos científicos y técnicos para atención de salud e investigación                     |
+| Atención Clínica Farmacéutica          | Prevención, resolución de problemas de salud, estilos de vida saludables                         |
+| Gestión                                | Servicios, procesos, productos, recursos humanos, físicos y financieros                          |
+| Competencias Complementarias           | Pensamiento crítico, comunicación, inglés, trabajo en equipo, responsabilidad social             |
+| Ámbitos Profesionales                  | Farmacia, industria, atención clínica, laboratorio forense, gestión comercial                    |
+
