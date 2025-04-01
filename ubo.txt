@@ -1,28 +1,33 @@
-Perfil de Egreso - Química y Farmacia (UBO)
-El Químico farmacéutico de la Universidad Bernardo O'Higgins es un profesional con formación
-interdisciplinaria en las 
-ciencias químico biológicas, farmacéuticas y de la administración, encargado de prevenir, detectar y
-resolver 
-problemáticas relacionadas con la productividad y la sustentabilidad de los procesos relacionados
-con los medicamentos, 
-cosméticos y productos biológicos, desarrollando, gestionando y aplicando tecnologías para apoyar
-la toma de decisiones 
-de la organización, la correcta administración de farmacias y el asesoramiento de la población para
-el uso racional y 
-responsable del medicamento, con el fin de contribuir a la salud pública dentro del marco de la
-legislación y 
-reglamentación vigente.
-Se encuentra habilitado para ejercer en los ámbitos de servicios farmacéuticos, farmacovigilancia,
-producción y gestión 
-de calidad farmacéutica y en el desarrollo de investigaciones asociadas.
-El egresado de la UBO se distingue por ser un profesional crítico, reflexivo, con sentido de orden y
-constancia; 
-preparado para enfrentarse a escenarios laborales complejos y resolver problemas propios del
-contexto, haciendo uso de su 
-liderazgo y capacidad para trabajar colaborativamente. Con un marcado espíritu de servicio,
-observa la realidad 
-circundante y pone a disposición sus conocimientos y habilidades para actuar responsablemente,
-contribuyendo a la 
-transformación, progreso y desarrollo de la comunidad. Consciente de su libertad, se hace cargo de
-sus decisiones y 
-enfrenta con compromiso ético los desafíos que se le presentan.
+El Químico Farmacéutico de la Universidad Bernardo O'Higgins es un profesional con formación interdisciplinaria en las ciencias químico-biológicas, farmacéuticas y de la administración, encargado de prevenir, detectar y resolver problemáticas relacionadas con la productividad y la sustentabilidad de los procesos relacionados con los medicamentos, cosméticos y productos biológicos.
+
+Desarrolla, gestiona y aplica tecnologías para apoyar la toma de decisiones de la organización, la correcta administración de farmacias y el asesoramiento de la población para el uso racional y responsable del medicamento, con el fin de contribuir a la salud pública dentro del marco de la legislación y reglamentación vigente.
+
+Se encuentra habilitado para ejercer en los ámbitos de:
+- Servicios farmacéuticos
+- Farmacovigilancia
+- Producción y gestión de calidad farmacéutica
+- Desarrollo de investigaciones asociadas
+
+El egresado de la UBO se distingue por ser un profesional:
+- Crítico y reflexivo
+- Con sentido de orden y constancia
+- Preparado para enfrentarse a escenarios laborales complejos
+- Capaz de resolver problemas propios del contexto
+- Líder y colaborativo
+
+Con un marcado espíritu de servicio, observa la realidad circundante y pone a disposición sus conocimientos y habilidades para actuar responsablemente, contribuyendo a la transformación, progreso y desarrollo de la comunidad.
+
+Consciente de su libertad, se hace cargo de sus decisiones y enfrenta con compromiso ético los desafíos que se le presentan.
+
+## Elementos Clave
+
+| **Elemento Clave**                     | **Descripción**                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Formación                              | Interdisciplinaria en ciencias químico-biológicas, farmacéuticas y de la administración          |
+| Enfoque                                | Productividad y sustentabilidad de procesos farmacéuticos                                        |
+| Aplicación Tecnológica                 | Desarrollo y gestión de tecnologías para la toma de decisiones y administración de farmacias     |
+| Asesoramiento                          | Promoción del uso racional y responsable del medicamento                                          |
+| Ámbitos de Ejercicio                   | Servicios farmacéuticos, farmacovigilancia, producción, calidad e investigación                  |
+| Perfil Profesional                     | Crítico, reflexivo, ordenado, constante, líder y colaborativo                                    |
+| Compromiso Ético y Social              | Espíritu de servicio, conciencia de la libertad, responsabilidad en sus decisiones               |
+"""
