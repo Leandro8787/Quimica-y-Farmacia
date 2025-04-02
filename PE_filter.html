@@ -22,7 +22,18 @@
         .modal-body blockquote {border-left: 4px solid var(--accent-blue); padding-left: 15px; margin: 15px 0; color: #666;}
         .modal-body code {background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace;}
         .modal-body pre {background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto;}
-        @media (max-width:900px){nav ul{flex-direction:column;align-items:center;padding:10px 0}nav ul li{margin:10px 0;width:100%;text-align:center}.intro h1{font-size:2em}.intro p{font-size:1em;padding:0 15px}.filter-container input{width:100%}.grid-container{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.modal-content{margin:20% auto;width:90%;padding:20px}}@media (max-width:600px){nav{position:static}.main-container{padding-top:10px}.intro h1{font-size:1.5em}.intro p{font-size:.9em}.grid-container{grid-template-columns:1fr;padding:0 10px}}.highlight-match{background-color:#FFEB3B;padding:0 2px;border-radius:2px}
+        /* Comparador Styles */
+        .compare-container {background: #FFF; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,.05); margin: 40px auto; max-width: 1200px;}
+        .compare-container h2 {color: var(--primary-blue); font-size: 1.8em; margin-bottom: 20px;}
+        .compare-controls {display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;}
+        .compare-controls input, .compare-controls select {padding: 10px; font-size: 1em; border: 1px solid var(--border-gray); border-radius: 5px; width: 300px; max-width: 100%; background: #FFF; color: var(--text-dark);}
+        .compare-controls input:focus, .compare-controls select:focus {outline: none; border-color: var(--accent-blue);}
+        .compare-content {display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;}
+        .compare-profile {flex: 1; min-width: 300px; max-width: 550px; background: #FFF; padding: 15px; border: 1px solid var(--border-gray); border-radius: 5px; overflow-y: auto; max-height: 60vh;}
+        .compare-profile h3 {color: var(--primary-blue); margin-bottom: 10px;}
+        .compare-profile .content {line-height: 1.8; text-align: justify;}
+        @media (max-width:900px){nav ul{flex-direction:column;align-items:center;padding:10px 0}nav ul li{margin:10px 0;width:100%;text-align:center}.intro h1{font-size:2em}.intro p{font-size:1em;padding:0 15px}.filter-container input{width:100%}.grid-container{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.modal-content{margin:20% auto;width:90%;padding:20px}.compare-controls{flex-direction:column;align-items:center}.compare-controls input, .compare-controls select{width:100%}}
+        @media (max-width:600px){nav{position:static}.main-container{padding-top:10px}.intro h1{font-size:1.5em}.intro p{font-size:.9em}.grid-container{grid-template-columns:1fr;padding:0 10px}}.highlight-match{background-color:#FFEB3B;padding:0 2px;border-radius:2px}
     </style>
 </head>
 <body>
@@ -57,12 +68,32 @@
             <p>Esta plataforma fue desarrollada para facilitar el acceso y comparación de los perfiles de egreso de las principales universidades chilenas. Los textos presentados corresponden a información oficial de cada institución.</p>
             <p>Desarrollado por: Leandro Torres Díaz, PhD.</p>
         </div>
+        <div class="compare-container" id="compare-section">
+            <h2>Comparar Perfiles de Egreso</h2>
+            <div class="compare-controls">
+                <input type="text" id="compare-search" placeholder="Busca universidad o palabra clave...">
+                <select id="compare-select">
+                    <option value="">Selecciona una universidad</option>
+                </select>
+            </div>
+            <div class="compare-content" id="compare-content">
+                <div class="compare-profile" id="compare-profile-1">
+                    <h3>Perfil 1</h3>
+                    <div class="content">Busca una universidad o palabra clave.</div>
+                </div>
+                <div class="compare-profile" id="compare-profile-2">
+                    <h3>Perfil 2</h3>
+                    <div class="content">Selecciona una universidad.</div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <p>© 2025 - Perfiles de Egreso Universidades Chilenas</p>
     </footer>
     <script>
-        const universities=[
+        const universities = [
+            // Aquí puedes pegar tu lista de universidades si lo deseas
             {id:"uantof",name:"Universidad de Antofagasta",shortName:"uantof",logoUrl:"https://transparencia.uantof.cl/vistas/plantillas_images/escudo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uantof.txt"},
             {id:"ubb",name:"Universidad del Bío-Bío",shortName:"ubb",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubb.txt"},
             {id:"ubo",name:"Universidad Bernardo O'Higgins",shortName:"ubo",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/1_logo_ubo.png/250px-1_logo_ubo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubo.txt"},
@@ -152,7 +183,7 @@
                     p=await(await fetch(u.profileUrl)).text();
                     profileCache[u.id]=p;
                 }
-                const f=marked.parse(p); // Parse Markdown to HTML
+                const f=marked.parse(p);
                 b.innerHTML=searchInput.value.length>2?highlightSearchTerm(f,searchInput.value.toLowerCase()):f;
             }catch(e){
                 console.error(`Error loading ${u.name}:`,e);
@@ -180,11 +211,103 @@
             document.getElementById('profile-modal').style.display='none';
         }
         
+        function populateCompareSelector(){
+            const select=document.getElementById('compare-select');
+            universities.forEach(u=>{
+                const opt=document.createElement('option');
+                opt.value=u.id;
+                opt.text=u.name;
+                select.appendChild(opt);
+            });
+        }
+        
+        const filterCompareUniversities=debounce(async()=>{
+            const t=document.getElementById('compare-search').value.toLowerCase();
+            const profileDiv=document.getElementById('compare-profile-1');
+            if(!t){
+                profileDiv.innerHTML='<h3>Perfil 1</h3><div class="content">Busca una universidad o palabra clave.</div>';
+                return;
+            }
+            let found=false;
+            for(const u of universities){
+                const n=u.name.toLowerCase().includes(t)||u.shortName.toLowerCase().includes(t)||u.id.includes(t);
+                if(n){
+                    await updateCompareProfileBySearch(u,t);
+                    found=true;
+                    break;
+                }
+                let p=profileCache[u.id];
+                if(!p){
+                    try{
+                        p=await(await fetch(u.profileUrl)).text();
+                        profileCache[u.id]=p;
+                    }catch(e){
+                        console.error(`Error loading ${u.name}:`,e);
+                        continue;
+                    }
+                }
+                if(p.toLowerCase().includes(t)){
+                    await updateCompareProfileBySearch(u,t);
+                    found=true;
+                    break;
+                }
+            }
+            if(!found){
+                profileDiv.innerHTML='<h3>Perfil 1</h3><div class="content">No se encontraron coincidencias.</div>';
+            }
+        },250);
+        
+        async function updateCompareProfileBySearch(u,t){
+            const profileDiv=document.getElementById('compare-profile-1');
+            profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">Cargando...</div>`;
+            try{
+                let p=profileCache[u.id];
+                if(!p){
+                    p=await(await fetch(u.profileUrl)).text();
+                    profileCache[u.id]=p;
+                }
+                const f=marked.parse(p);
+                profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">${t.length>2?highlightSearchTerm(f,t):f}</div>`;
+            }catch(e){
+                console.error(`Error loading ${u.name}:`,e);
+                profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">Error al cargar el perfil.</div>`;
+            }
+        }
+        
+        async function updateCompareProfileBySelect(){
+            const select=document.getElementById('compare-select'),
+                  profileDiv=document.getElementById('compare-profile-2'),
+                  selectedId=select.value;
+            if(!selectedId){
+                profileDiv.innerHTML='<h3>Perfil 2</h3><div class="content">Selecciona una universidad.</div>';
+                return;
+            }
+            const u=universities.find(univ=>univ.id===selectedId);
+            profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">Cargando...</div>`;
+            try{
+                let p=profileCache[u.id];
+                if(!p){
+                    p=await(await fetch(u.profileUrl)).text();
+                    profileCache[u.id]=p;
+                }
+                const f=marked.parse(p);
+                profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">${f}</div>`;
+            }catch(e){
+                console.error(`Error loading ${u.name}:`,e);
+                profileDiv.innerHTML=`<h3>${u.name}</h3><div class="content">Error al cargar el perfil.</div>`;
+            }
+        }
+        
         window.addEventListener('click',e=>{
             if(e.target===document.getElementById('profile-modal'))closeModal();
         });
         searchInput.addEventListener('input',filterUniversities);
-        document.addEventListener('DOMContentLoaded',generateUniversityCards);
+        document.addEventListener('DOMContentLoaded',()=>{
+            generateUniversityCards();
+            populateCompareSelector();
+            document.getElementById('compare-search').addEventListener('input',filterCompareUniversities);
+            document.getElementById('compare-select').addEventListener('change',updateCompareProfileBySelect);
+        });
     </script>
 </body>
 </html>
