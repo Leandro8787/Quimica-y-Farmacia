@@ -63,11 +63,6 @@
                 <div class="modal-body" id="modal-body"></div>
             </div>
         </div>
-        <div class="intro" id="acerca" style="margin-top:40px;">
-            <h1>Acerca de este Proyecto</h1>
-            <p>Esta plataforma fue desarrollada para facilitar el acceso y comparación de los perfiles de egreso de las principales universidades chilenas. Los textos presentados corresponden a información oficial de cada institución.</p>
-            <p>Desarrollado por: Leandro Torres Díaz, PhD.</p>
-        </div>
         <div class="compare-container" id="compare-section">
             <h2>Comparar Perfiles de Egreso</h2>
             <div class="compare-controls">
@@ -87,13 +82,17 @@
                 </div>
             </div>
         </div>
+        <div class="intro" id="acerca" style="margin-top:40px;">
+            <h1>Acerca de este Proyecto</h1>
+            <p>Esta plataforma fue desarrollada para facilitar el acceso y comparación de los perfiles de egreso de las principales universidades chilenas. Los textos presentados corresponden a información oficial de cada institución.</p>
+            <p>Desarrollado por: Leandro Torres Díaz, PhD.</p>
+        </div>
     </div>
     <footer class="footer">
         <p>© 2025 - Perfiles de Egreso Universidades Chilenas</p>
     </footer>
     <script>
         const universities = [
-            // Aquí puedes pegar tu lista de universidades si lo deseas
             {id:"uantof",name:"Universidad de Antofagasta",shortName:"uantof",logoUrl:"https://transparencia.uantof.cl/vistas/plantillas_images/escudo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uantof.txt"},
             {id:"ubb",name:"Universidad del Bío-Bío",shortName:"ubb",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubb.txt"},
             {id:"ubo",name:"Universidad Bernardo O'Higgins",shortName:"ubo",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/1_logo_ubo.png/250px-1_logo_ubo.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/ubo.txt"},
@@ -109,7 +108,7 @@
             {id:"usach",name:"Universidad de Santiago de Chile",shortName:"usach",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Escudo_de_la_Universidad_de_Santiago-3.svg/504px-Escudo_de_la_Universidad_de_Santiago-3.svg.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/usach.txt"},
             {id:"uss",name:"Universidad San Sebastián",shortName:"uss",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/c/c4/Logo_Universidad_san_sebastian.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uss.txt"},
             {id:"utem",name:"Universidad Tecnológica Metropolitana",shortName:"utem",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_UTEM.png?20150417163646",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/utem.txt"},
-            {id:"puc",name:"Pontificia Universidad Católica de Chile",shortName:"puc",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg/800px-Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/uc.txt"}
+            {id:"puc",name:"Pontificia Universidad Católica de Chile",shortName:"puc",logoUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg/800px-Escudo_de_la_Pontificia_Universidad_Cat%C3%B3lica_de_Chile.svg.png",profileUrl:"https://raw.githubusercontent.com/Leandro8787/Quimica-y-Farmacia/refs/heads/main/puc.txt"}
         ];
         const profileCache={};
         const grid=document.getElementById('university-grid');
